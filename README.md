@@ -57,4 +57,4 @@ We believe that transparency in media is essential, and building tools to detect
 ## Contact
 
 If you’d like access to the dataset or want to collaborate:
-📧 Email: abhirup1504@gmail.com or swar16.work@gmail.com
+📧 Email: [abhirup1504@gmail.com] or [swar16.work@gmail.com]
