@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Bias Detector</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+      .spinner {
+          border: 6px solid #eee;
+          border-top: 6px solid #3498db;
+          border-radius: 50%;
+          width: 48px;
+          height: 48px;
+          animation: spin 1s linear infinite;
+          margin: 20px auto;
+          display: block;
+      }
+      @keyframes spin {
+          0% { transform: rotate(0deg);}
+          100% { transform: rotate(360deg);}
+      }
+      .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; align-items: center; gap: 10px; justify-content: flex-end;">
+      <label class="theme-toggle">
+        <input type="checkbox" id="themeSwitch" />
+        <span class="slider-round"></span>
+      </label>
+      <span class="theme-icon" id="themeIcon">🌞</span>
+    </div>
+
+    <h1>Detect News Bias: Left-Leaning, Centrist or Right-Leaning?</h1>
+
+    <div class="mode-toggle">
+      <button id="urlModeBtn" class="mode-button active">URL Input</button>
+      <button id="manualModeBtn" class="mode-button">Manual Input</button>
+    </div>
+
+    <div id="urlInputSection" class="content-section toggle-section">
+        <input type="text" id="urlInput" placeholder="Enter article URL" />
+        <button id="extractButton" class="primary-button" onclick="extractContent()">
+          <i class="fas fa-magic"></i>
+          Extract
+        </button>
+    </div>
+
+    <div id="manualInputSection" class="content-section toggle-section hidden">
+        <input type="text" id="manualHeadline" placeholder="Enter headline" />
+        <textarea id="manualContent" rows="6" placeholder="Enter content"></textarea>
+        <div style="display: flex; gap: 10px;">
+            <button type="button" onclick="showManualPreview()" class="icon-button preview" title="Preview">
+                <i data-lucide="eye"></i>
+            </button>
+            <button onclick="resetManualInputs()" class="icon-button reset" title="Reset">
+                <i data-lucide="rotate-ccw"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="previewSection" class="hidden">
+      <h3>Headline:</h3>
+      <input type="text" id="previewHeadline" readonly />
+      <h3>Content:</h3>
+      <textarea id="previewContent" rows="6" readonly></textarea>
+      <button id="predictButton" class="primary-button" onclick="predict()">
+        <i class="fas fa-brain"></i>
+        Predict
+      </button>
+    </div>
+
+    <div id="loading" class="loading-message hidden">
+      Please be patient, we're working on it...
+    </div>
+    <div id="spinner" class="spinner hidden"></div>
+    <div id="result" class="result-message"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
