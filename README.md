@@ -49,6 +49,10 @@ We thank the original authors for their contribution to the open-source communit
 We are similarly indebted to the Google News Service and various Indian media outlets for contributing towards our dataset.
 
 
+## Final Thoughts
+
+We believe that transparency in media is essential, and building tools to detect bias is a step toward that goal. Contributions, feedback, or collaborations are always welcome.
+
 
 ## Contact
 
