@@ -16,5 +16,5 @@ We curated our own dataset from scratch to ensure relevance, diversity, and bala
 We’re open to collaboration and academic sharing!
 If you're a researcher, student, or developer genuinely interested in using our dataset for non-commercial purposes, feel free to reach out.
 
-📧 Contact: [your-email@example.com]
+📧 Contact: [abhirup1504@gmail.com]
 📄 Please include a short message describing your intent and use case.
