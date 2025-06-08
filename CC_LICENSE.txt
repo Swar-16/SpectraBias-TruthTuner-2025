@@ -1,0 +1,16 @@
+Creative Commons Attribution-NonCommercial 4.0 International Public License
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+- Attribution — You must give appropriate credit.
+- NonCommercial — You may not use the material for commercial purposes.
+
+This applies to:
+- All written documentation
+- Dataset curation methodology
+- Any private dataset shared via permission
+
+Full license: https://creativecommons.org/licenses/by-nc/4.0/
